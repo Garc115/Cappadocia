@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inventario - Access</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+	<form onsubmit="return security()">
+		<div class="card">
+		  <img class="User_img" src="images/User.png" alt="User">
+		  <div class="container">
+		    <h2><b>Acceso Inventario</b></h2>
+		    <input class="textbox" type="text" name="username" placeholder="Usuario" id="trooper" size="35">
+		    <br>
+		    <input class="textbox" type="password" name="pass" id="confirm" placeholder="Contraseña" size="35">
+		    <br>
+		    <input class="btn_signin" type="submit" name="signin" value="Confirm">
+		    <input class="btn_clear" type="reset" name="clear" value="Delete">
+		  </div>
+		</div>
+	</form>
+
+	<script>
+		function security(){
+      var user = document.getElementById("trooper").value;
+      var contra = document.getElementById("confirm").value;
+      if( user == "Lilith" && contra == "Bacon"){
+        //window.open("http://garc115.0fees.us/Portafolio_P3/Portafolio_P3.html");
+      }
+      else {
+        contra.type = "password";
+      }
+    
+    };
+	</script>
+
+</center>
+</body>
+</html>
